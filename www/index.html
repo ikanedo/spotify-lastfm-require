@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Spotify - currently listening to</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='http://uklwd.net/wp-content/themes/twentytwelve/style.css?ver=3.5.2' type='text/css' media='all' />
+		<link rel="stylesheet" type="text/css" href="css/tracks.css" />
+        <script data-main="js/app" src="js/lib/require.js"></script>
+    </head>
+    <body>
+        <h1>Currently listening to...</h1>
+        
+		<ul class="track-list clear" data-bind="foreach : { data : tracks, as : 'track'}">
+			<li class="track">
+				<a href="" target="_blank" data-bind="attr : {href : track.url}">
+					<img class="track-album-art" data-bind="attr:{ src : track.image[2]['#text'], title : track.album['#text']}" />
+					<strong class="track-name" data-bind="text : track.name"></strong>
+					<small class="track-artist" data-bind="text : track.artist['#text']"></small>
+				</a>
+			</li>
+		</ul>
+		
+    </body>
+</html>

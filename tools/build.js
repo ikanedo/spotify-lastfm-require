@@ -4,7 +4,7 @@
     "dir": "../www-build",
     //Comment out the optimize line if you want
     //the code minified by UglifyJS
-    "optimize": "none",
+    "optimize": "uglify",
 
     // point to the shim config we set up before
     "mainConfigFile": "../www/js/app.js",

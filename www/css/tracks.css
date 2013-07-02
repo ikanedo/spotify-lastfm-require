@@ -1,0 +1,25 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/spotify\/www\/css\/tracks\.scss}line{font-family:\000031}}
+.track-list {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/spotify\/www\/css\/tracks\.scss}line{font-family:\000035}}
+.track {
+  float: left;
+  margin: 0.2em;
+  max-width: 126px;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/spotify\/www\/css\/tracks\.scss}line{font-family:\0000312}}
+.track-album-art {
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+  background: #ccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/spotify\/www\/css\/tracks\.scss}line{font-family:\0000323}}
+.track-name {
+  display: block;
+}

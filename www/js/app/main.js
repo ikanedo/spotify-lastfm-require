@@ -1,6 +1,13 @@
-define(["jquery", "jquery.alpha", "jquery.beta"], function($) {
-    //the jquery.alpha.js and jquery.beta.js plugins have been loaded.
-    $(function() {
-        $('body').alpha().beta();
-    });
+define([
+	"jquery", 
+	"knockout", 
+	"collections/recentTracks",
+	"viewModels/tracksViewModel"
+], 
+function($, ko, tracks, tracksVm) {
+    tracks.fetch().done(function(response){
+		var tracks = new tracksVm(response.recenttracks.track);
+		ko.applyBindings(tracks);
+		
+	});
 });

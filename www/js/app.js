@@ -6,7 +6,10 @@ requirejs.config({
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
-      "jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min"
+      "jquery": "http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min",
+	  "knockout" : "http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1",
+	  "collections" : "../collections",
+	  "viewModels" : "../viewModels"
     }
 });
 

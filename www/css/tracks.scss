@@ -1,0 +1,25 @@
+.track-list {
+	list-style : none;
+}
+
+.track {
+	float: left;
+	margin: 0.2em;
+	max-width: 126px;
+	text-align: center;
+}
+
+.track-album-art {
+	display: inline-block;
+	width: 126px;
+	height: 126px;
+	background: #ccc;
+}
+
+.track-artist {
+	
+}
+
+.track-name {
+	display: block
+}
